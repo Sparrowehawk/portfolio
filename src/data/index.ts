@@ -13,7 +13,9 @@ import { SpiIcon } from '@/components/icons/tags/spi'
 import { i2cIcon } from '@/components/icons/tags/i2c'
 import { TexasInstrumentsIcon } from '@/components/icons/tags/TI'
 import { TensorFlowIcon } from '@/components/icons/tags/tensorflow'
-
+import { RustLogo } from '@/components/icons/tags/rust'
+import { LinuxLogo } from '@/components/icons/tags/linux'
+import Tux from '@/components/icons/tags/Tux.svg'
 
 export const AVATAR = {
   name: 'Hamid Jamal',
@@ -191,9 +193,79 @@ const TAGS = {
     name: 'I2C',
     icon: i2cIcon
   },
+  RUST: {
+    name: 'Rust',
+    icon: RustLogo
+  },
+  LINUX : {
+    name: 'Linux',
+    icon: LinuxLogo
+  }
 }
 
 export const PROJECTS = [
+        {
+        title: 'Sparr_engine',
+        tags: [
+          TAGS.LINUX,
+          TAGS.RUST,
+        ],
+        description:
+          'A chess engine developed in Rust with a bitboard approach, current rating is ~1200, passes Perft test depth 6 with UCI support. Implements beta-alpha pruning, iterative deeping, quiescence search, killer moves, history heuristics, Late Move Reduction and Static Exchange Evaluation (SSE). Using Zobrist hashing for transposition tables and evaluates positions using Piece-Square Tables (PST).',
+        link: {
+          github: 'https://github.com/Sparrowehawk/chess_bot',
+        },
+      },
+      {
+        title: 'SparrOs',
+        tags: [
+          TAGS.LINUX,
+          TAGS.RUST,
+        ],
+        description:
+          'A bare x86_64 OS created in Rust with a VGA buffer, CPU exceptions, fault handling, interrupt support, memory paging, heap allocation and Async/Await support.',
+        link: {
+          github: 'https://github.com/Sparrowehawk/sparr_os',
+        },
+      },
+      {
+        title: 'SparrOs',
+        tags: [
+          TAGS.LINUX,
+          TAGS.RUST,
+        ],
+        description:
+          'A bare x86_64 OS created in Rust with a VGA buffer, CPU exceptions, fault handling, interrupt support, memory paging, heap allocation and Async/Await support.',
+        link: {
+          github: 'https://github.com/Sparrowehawk/sparr_os',
+        },
+      },
+      {
+      title: 'Rippedgrep',
+      tags: [
+        TAGS.LINUX,
+        TAGS.RUST,
+      ],
+      description:
+        'A rust-based approach to implement Ripgrep in Linux using Rust with the capability foe recursive searching, multi-threaded operations, flags for different critera and regex support',
+      link: {
+        github: 'https://github.com/Sparrowehawk/rippedgrep',
+      },
+    },
+    {
+    title: 'Fake news checker',
+    tags: [
+      TAGS.TENSORFLOW,
+      TAGS.NUMPY,
+      TAGS.PYTHON,
+      TAGS.JUPYTER
+    ],
+    description:
+      'A Scitkit-lean logistic regression model using pipelines and tensorflow to develop a model to determine if a news site is a fake news site or legitimate.',
+    link: {
+      github: 'https://github.com/Sparrowehawk/Fake-news-checker/',
+    },
+  },
   {
     title: 'Machine Learning certificates',
     tags: [
